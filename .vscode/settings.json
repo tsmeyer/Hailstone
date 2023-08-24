@@ -1,0 +1,45 @@
+{
+    // exclude all file patterns in .gitignore from editor visibility
+    // not using currently as it means .gitignore cannot be hidden.
+    // files.exclude will need to be synced with any changes in .gitignore
+    // "explorer.excludeGitIgnore": true,
+    // additional file patterns to exclude from editor visibility
+    "files.exclude": {
+        ".vscode/": true,
+        ".github/": true,
+        ".devcontainer/": true,
+        ".gitignore": true,
+        "settings.gradle": true,
+        "**/build.gradle": true,
+        // From .gitignore
+        "*.class": true,
+        ".gradle/": true,
+        "build/": true,
+        "bin/": true
+    },
+    // editor formatting conventions for Java
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    //"diffEditor.ignoreTrimWhitespace": true,
+    // off offUnlessPressed on onUnlessPressed (show the hints with CTRL + ALT)
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    // extension specific settings.
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.showBuildStatusOnStart.enabled": "notification",
+    "java.server.launchMode": "Standard",
+    "jupyter.kernels.filter": [
+        {
+            "type": "jupyterKernelspec",
+            "path": "/usr/share/jupyter/kernels/java/kernel.json"
+        }
+    ],
+    //"gradle.nestedProjects": true,
+    // disable telemetry
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
+}
